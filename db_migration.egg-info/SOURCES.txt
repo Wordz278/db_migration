@@ -1,5 +1,0 @@
-setup.py
-db_migration.egg-info/PKG-INFO
-db_migration.egg-info/SOURCES.txt
-db_migration.egg-info/dependency_links.txt
-db_migration.egg-info/top_level.txt
