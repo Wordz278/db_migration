@@ -1,5 +1,6 @@
 .vscode/
 app/__pycache__/
 app/migrations/__pycache__/
+app/migrations/versions/__pycache__/
 composition/gitignore/
 *.egg-info
