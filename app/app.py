@@ -1,14 +1,16 @@
 from flask import Flask
 from flask_sqlalchemy import SQLAlchemy
-from flask_migrate import Migrate
-
+from flask_migrate import Migrate, MigrateCommand
+from flask_script import Manager
 app = Flask(__name__)
 
-app.config['SQLALCHEMY_DATABASE_URI'] = 'postgresql://user:pass@localhost/development'
+app.config['SQLALCHEMY_DATABASE_URI'] = 'postgresql://user:pass@localhost/prod'
 app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = False
 
 db = SQLAlchemy(app)
 migrate = Migrate(app, db)
+manager = Manager(app)
+manager.add_command('db', MigrateCommand)
 
 
 class Recruits(db.Model):
@@ -17,11 +19,8 @@ class Recruits(db.Model):
     surname = db.Column(db.String(100))
     github_name = db.Column(db.String(100))
     id_number = db.Column(db.BigInteger)
-
-
-def main():
-    db.create_all()
+    personal_email_address = db.Column(db.String(100), unique=True)
 
 
 if __name__ == "__main__":
-    main()
+    manager.run()
