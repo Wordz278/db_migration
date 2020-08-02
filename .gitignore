@@ -1,0 +1,4 @@
+.vscode/
+app/__pycache__/
+composition/gitignore/
+*.egg-info
