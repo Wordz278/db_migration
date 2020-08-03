@@ -37,20 +37,20 @@ class Recruits(db.Model):
 
 
 def main():
-    recruit1 = Recruits('Oslo', 'King', 'OSKing92', 'OS92',
-                        9612075607950, 'OD92@gmail.com', 'C26_JAVA')
-    recruit2 = Recruits('Jane', 'Doe', 'JDoe009!',
-                        'JaneDoe009!', 9612075607900, 'JDoe@gmail.com', 'C26_JAVA')
-    recruit3 = Recruits('Floyd', 'Money', 'FMoney1000',
-                        'MoneyFloyd', 9212075607900, 'FM1000@gmail.com', 'C26_JAVA')
-    recruit4 = Recruits('Woody', 'Green', 'WG009!',
-                        'WoodyG009!', 9612075607900, 'WG@gmail.com', 'C26_JAVA')
-    recruit5 = Recruits('Tumelo', 'Khoza', 'TK_Oct',
-                        'TK009!', 9112075607700, 'TK@gmail.com', 'C26_JAVA')
+    recruit1 = Recruits('Julia', 'Cage', 'JCage92', 'JCage92',
+                        9412075657950, 'JCage@gmail.com', 'C27_Web_Dev')
+    recruit2 = Recruits('Timu', 'Grey', 'TimuGrey009!',
+                        'TimuGrey009!', 9612075607901, 'TGrey@gmail.com', 'C27_Web_Dev')
+    recruit3 = Recruits('Fortunate', 'Blue', 'FBlue1000',
+                        'MoneyFloyd', 9212075607902, 'FBlue1000@gmail.com', 'C27_Web_Dev')
+    recruit4 = Recruits('Micky', 'Black', 'MK009!',
+                        'MickyB009!', 9412075607903, 'MK@gmail.com', 'C27_Web_Dev')
+    recruit5 = Recruits('Zoe', 'Yellow', 'ZoeY',
+                        'ZoeYel09', 9212075607704, 'ZY@gmail.com', 'C27_Web_Dev')
     db.session.add(recruit5)
     db.session.commit()
 
 
 if __name__ == "__main__":
-    manager.run()
-    # main()
+    # manager.run()
+    main()
