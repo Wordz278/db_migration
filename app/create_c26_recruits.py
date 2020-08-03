@@ -37,13 +37,20 @@ class Recruits(db.Model):
 
 
 def main():
-    recruit1 = Recruits('Jacky', 'Sledge', 'Jacky92',
-                        'JackyS92', 9612075607900, 'JSledge@gmail.com')
-    recruit2 = Recruits('Lucky', 'Black', 'LBlack009!',
-                        'LuckyBlack009!', 9612075607900, 'LuckyBlue@gmail.com')
-    db.session.add(recruit2)
+    recruit1 = Recruits('Oslo', 'King', 'OSKing92', 'OS92',
+                        9612075607950, 'OD92@gmail.com', 'C26_JAVA')
+    recruit2 = Recruits('Jane', 'Doe', 'JDoe009!',
+                        'JaneDoe009!', 9612075607900, 'JDoe@gmail.com', 'C26_JAVA')
+    recruit3 = Recruits('Floyd', 'Money', 'FMoney1000',
+                        'MoneyFloyd', 9212075607900, 'FM1000@gmail.com', 'C26_JAVA')
+    recruit4 = Recruits('Woody', 'Green', 'WG009!',
+                        'WoodyG009!', 9612075607900, 'WG@gmail.com', 'C26_JAVA')
+    recruit5 = Recruits('Tumelo', 'Khoza', 'TK_Oct',
+                        'TK009!', 9112075607700, 'TK@gmail.com', 'C26_JAVA')
+    db.session.add(recruit5)
     db.session.commit()
 
 
 if __name__ == "__main__":
     manager.run()
+    # main()
