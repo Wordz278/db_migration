@@ -13,6 +13,4 @@ Project Instructions https://umuzi-org.github.io/tech-department/projects/python
     docker-compose up or for installing docker-compose see https://docs.docker.com/compose/install/  
 3. run the setup script to enable project modules importing:  
     python setup.py develop
-4. cd into the app directory and create tables of the development database:
-    from app import db  
-    db.create_all()  
+4. Open the project, read the instructions and hapy coding.
