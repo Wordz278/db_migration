@@ -24,7 +24,6 @@ class Recruits(db.Model):
     github_name = db.Column(db.String(100))
     id_number = db.Column(db.BigInteger)
     personal_email_address = db.Column(db.String(100), unique=True)
-    cohort = db.Column(db.String(100))
 
     def __init__(self, first_name, surname, chatname, github_name, id_number, personal_email_address, cohort):
         self.first_name = first_name
